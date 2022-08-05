@@ -32,6 +32,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.amqp:spring-rabbit-test'
+	//쿼리파라미터 로그
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
 }
 
 tasks.named('test') {

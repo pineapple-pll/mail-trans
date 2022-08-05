@@ -11,13 +11,14 @@ import javax.persistence.*;
 public class Config {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "config_id")
     private Long id;
 
     private String host;
 
     private String sid;
 
-    private String domain;
+    private String transDomain;
 
     private String localPath;
 

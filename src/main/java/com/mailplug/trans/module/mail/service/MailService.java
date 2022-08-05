@@ -1,7 +1,7 @@
 package com.mailplug.trans.module.mail.service;
 
-import com.mailplug.trans.module.mail.dao.member.MemberRepository;
-import com.mailplug.trans.module.mail.domain.Member;
+import com.mailplug.trans.module.mail.dao.member.MailRepository;
+import com.mailplug.trans.module.mail.domain.MailUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,11 +12,11 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
-public class MemberService {
+public class MailService {
 
-    private final MemberRepository memberRepository;
+    private final MailRepository memberRepository;
 
-    public List<Member> getMemberList() {
+    public List<MailUser> getMemberList() {
 
         return memberRepository.findAll();
 
